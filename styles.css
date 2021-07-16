@@ -59,6 +59,7 @@ textarea {
 }
 
 .submit {
+  margin-top: 1rem;
   letter-spacing: 0.1rem;
   font-family: 'Roboto', sans-serif;
   font-size: 0.75rem;
@@ -88,7 +89,7 @@ textarea {
 .dialogue {
   background-color: white;
   height: 45vh;
-  width: 50vw;
+  width: 55vw;
   margin: 20vh auto;
   padding: 2rem;
 }
