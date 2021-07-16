@@ -10,15 +10,15 @@
   <link href="https://fonts.googleapis.com/css?family=Droid+Serif|Roboto:300" rel="stylesheet">
 </head>
 <body>
-  <div class="container overlay">
-    <div class="row">
-      <div class="column-full">
-        <h1 class = "text-center">Add Entry</h1>
-      </div>
-    </div>
-    <form>
+  <div class="overlay">
+    <form class="dialogue">
       <div class="row">
-        <select name="day-of-week" id="day-of-week">
+        <div class="column-full">
+          <h1 class = "text-center">Add Entry</h1>
+        </div>
+      </div>
+      <div class="row">
+        <select class="margin-1" name="day-of-week" id="day-of-week">
           <option>Day of the Week</option>
           <option value="Sunday">Sunday</option>
           <option value="Monday">Monday</option>
@@ -35,7 +35,9 @@
           <textarea name="description" id="description" rows="6" placeholder="Description"></textarea>
         </div>
       </div>
-      <button class="submit" type="submit">Submit</button>
+      <div class="row flex-end">
+        <button class="submit" type="submit">Submit</button>
+      </div>
     </form>
   </div>
   <div class="container">
