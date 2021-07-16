@@ -24,6 +24,31 @@ textarea {
   width: 100%;
 }
 
+table {
+  margin-top: 2rem;
+  border: 2px solid  #1b4332;
+  width: 100%;
+}
+
+thead {
+  background-color: #52b788;
+  color: white;
+  text-align: left;
+}
+
+.styledTable {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 400px;
+  border: none;
+}
+
+/* .styledTable tbody tr :nth-child(even) {
+  background-color: #40916c;
+} */
+
 .text-center {
   text-align: center;
 }
@@ -70,12 +95,16 @@ textarea {
   border-radius: 5px;
   padding: 0.5rem 1.5rem;
   background-color: #2d6a4f;
-  transition: 0.5s;
+  transition: 0.1s;
 }
 
 .add-entry:hover {
   background-color: #52b788;
   cursor: pointer;
+}
+
+.add-entry:active {
+  transform: scale(0.95);
 }
 
 .overlay {
@@ -106,10 +135,14 @@ textarea {
   margin: 0.5rem;
   padding: 1rem;
   background-color: #52b788;
-  transition: 0.5s;
+  transition: 0.1s;
 }
 
 .dayButton:hover {
   cursor: pointer;
   background-color: #2d6a4f;
+}
+
+.dayButton:active {
+  transform: scale(0.95);
 }
