@@ -1,3 +1,24 @@
+body {
+  background-color: #d8f3dc;
+  font-family: 'Droid Serif', serif;
+  font-size: 15px;
+}
+
+h1 {
+  font-size: 35px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #081c15;
+  font-family: 'Roboto', sans-serif;
+
+  /* font-size: 35px;font-size */
+}
 
 .text-center {
   text-align: center;
@@ -8,5 +29,19 @@
 }
 
 .add-entry {
-  background-color: aqua;
+  letter-spacing: 0.1rem;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  border-style: none;
+  border-radius: 5px;
+  padding: 1rem 3rem;
+  background-color: #40916c;
+  transition: 0.5s;
+}
+
+.add-entry:hover {
+  background-color: #52b788;
+  cursor: pointer;
 }
