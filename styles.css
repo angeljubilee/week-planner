@@ -41,7 +41,33 @@ h6 {
   transition: 0.5s;
 }
 
+.submit {
+  letter-spacing: 0.1rem;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: white;
+  border-style: none;
+  border-radius: 5px;
+  padding: 0.5rem 1.5rem;
+  background-color: #2d6a4f;
+  transition: 0.5s;
+}
+
 .add-entry:hover {
   background-color: #52b788;
   cursor: pointer;
+}
+
+.overlay {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.dialogue {
+  background-color: white;
 }

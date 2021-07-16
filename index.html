@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css?family=Droid+Serif|Roboto:300" rel="stylesheet">
 </head>
 <body>
-  <div class="container">
+  <div class="container overlay">
     <div class="row">
       <div class="column-full">
         <h1 class = "text-center">Add Entry</h1>
@@ -28,13 +28,14 @@
           <option value="Friday">Friday</option>
           <option value="Saturday">Saturday</option>
         </select>
-        <select name="time" id="time">
-          <option value=""></option>
-          <!-- <option value="8:00">8:00</option>
-          <option value="9:00">9:00</option>
-          <option value=""></option> -->
-        </select>
+        <input type="time" id="time" name="time" min="00:00" max="23:59" value="08:00" required>
       </div>
+      <div class="row">
+        <div class="column-full">
+          <textarea name="description" id="description" rows="6" placeholder="Description"></textarea>
+        </div>
+      </div>
+      <button class="submit" type="submit">Submit</button>
     </form>
   </div>
   <div class="container">
