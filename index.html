@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif|Roboto:300" >
 </head>
 <body>
-  <div class="overlay">
+  <div class="overlay hidden">
     <form class="dialogue">
       <div class="row">
         <div class="column-full">
@@ -18,8 +18,8 @@
         </div>
       </div>
       <div class="row">
-        <select class="margin-1" name="day" id="day-of-week">
-          <option>Day of the Week</option>
+        <select class="margin-1" name="day" id="day-of-week" required>
+          <option default>Day of the Week</option>
           <option value="Sunday">Sunday</option>
           <option value="Monday">Monday</option>
           <option value="Tuesday">Tuesday</option>
@@ -32,7 +32,7 @@
       </div>
       <div class="row">
         <div class="column-full">
-          <textarea name="description" id="description" rows="6" placeholder="Description"></textarea>
+          <textarea name="description" id="description" rows="6" placeholder="Description" required></textarea>
         </div>
       </div>
       <div class="row flex-end">
