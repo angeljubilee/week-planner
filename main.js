@@ -1,4 +1,4 @@
-
+/* global data */
 var $form = document.querySelector('form');
 var $addEntry = document.querySelector('.add-entry');
 var $overLay = document.querySelector('.overlay');
@@ -18,6 +18,7 @@ function handleSubmit(event) {
     time: $time,
     description: $description
   };
+
   saveEntry($day, entry);
 }
 
@@ -26,5 +27,25 @@ function handleClick(event) {
 }
 
 function saveEntry(day, entry) {
+  data.days[dayIndex(day)].push(entry);
 
+}
+
+function dayIndex(day) {
+  switch (day) {
+    case 'Sunday':
+      return 0;
+    case 'Monday':
+      return 1;
+    case 'Tuesday':
+      return 2;
+    case 'Wednesday':
+      return 3;
+    case 'Thursday':
+      return 4;
+    case 'Friday':
+      return 5;
+    case 'Saturday':
+      return 6;
+  }
 }
