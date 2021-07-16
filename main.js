@@ -1,4 +1,4 @@
-/* global data */
+/* global weekData */
 var $form = document.querySelector('form');
 var $addEntry = document.querySelector('.add-entry');
 var $overLay = document.querySelector('.overlay');
@@ -27,8 +27,8 @@ function handleClick(event) {
 }
 
 function saveEntry(day, entry) {
-  data.days[dayIndex(day)].push(entry);
-
+  var i = dayIndex(day);
+  weekData.days[i].push(entry);
 }
 
 function dayIndex(day) {
