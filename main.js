@@ -20,6 +20,7 @@ function handleSubmit(event) {
   };
 
   saveEntry($day, entry);
+  document.querySelector('.no-entries').className = 'hidden';
 }
 
 function handleClick(event) {
